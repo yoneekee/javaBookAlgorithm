@@ -52,7 +52,7 @@ public class getMaxMin {
 
     public static void main(String[] args) {
         getMaxMin gmm = new getMaxMin();
-        int[] hairetsu = {0, 23, 4, 22, 5, 7, 8, 234};
+        int[] hairetsu = {0, 23, 4, 22, 5, 7, 8, 8, 234, 0, -5, 234, 1799};
 
         int max = gmm.getMax(hairetsu);
         int min = gmm.getMin(hairetsu);
@@ -64,11 +64,13 @@ public class getMaxMin {
         for (int num : hairetsu) {
             System.out.print(num + " ");
         }
+        System.out.println();
 
         gmm.sortArrayDescending(hairetsu);
         System.out.print("Sorted Array: ");
         for (int num : hairetsu) {
             System.out.print(num + " ");
         }
+        System.out.println();
     }
 }
